@@ -1,0 +1,6 @@
+.venv
+.vscode
+__pycache__
+data/logs
+data/Spotify_/.env
+data/Youtube/oauth.json

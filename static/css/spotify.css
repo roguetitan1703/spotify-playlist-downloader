@@ -1,0 +1,582 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+
+
+.main {
+    display: flex;
+    height: 95.5vh;
+}
+
+.sidebar {
+    background-color: #000;
+    width: 380px;
+    border-radius: 1rem;
+
+}
+
+#sidebar-heading {
+    color: white
+}
+
+.main-content {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    margin: 5px;
+    height: 98vh
+
+
+}
+
+.music-player {
+    background-color: #000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 72px;
+   /* display: none; */
+}
+
+a {
+    text-decoration: none;
+    line-height: 2.5rem;
+    /* color: white; */
+    /* opacity: .7; */
+}
+
+
+a:hover {
+    /* opacity: 1; */
+
+}
+
+.nav-option i {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+#nav_opt {
+    height: 100px;
+    background-color: #121212;
+    border-radius: .5rem;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.library {
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem;
+    margin: 5px;
+    height: 97.18vh
+}
+
+.icons {
+    display: inline-block;
+    font-size: 1.2rem;
+    opacity: .7;
+}
+
+.icons:hover {
+    opacity: 1;
+}
+
+.lib-option {
+    display: inline-block;
+}
+
+
+.fa-plus {
+    position: relative;
+    left: 9rem;
+}
+
+.fa-arrow-right {
+    position: relative;
+    left: 10rem;
+}
+
+.library p {
+    font-size: small;
+}
+
+.library img {
+    padding-left: 15px;
+    padding-right: 10px;
+}
+
+.box-1,
+.box-2 {
+    background-color: #202020;
+    height: 150px;
+    width: 355px;
+    margin: .5rem;
+    border-radius: .5rem;
+}
+
+.box-1 h5,
+.box-2 h5 {
+    padding-top: 20px;
+}
+
+.box-1 h5,
+p,
+button {
+    margin-left: 15px;
+}
+
+.box-2 h5,
+p,
+button {
+    margin-left: 15px;
+}
+
+
+.badge {
+    height: 30px;
+    width: 130px;
+    border-radius: 30px;
+    border: #000;
+    font-size: 14px;
+    font-weight: bolder;
+
+}
+
+.foot {
+    background-color: black;
+    border: 1px solid white;
+    width: 70px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+.footer {
+    margin-top: 250px;
+}
+
+.footer a {
+    font-size: 10px;
+    line-height: 2px;
+    margin: 0 .25rem 0 .9rem;
+}
+
+.language {
+    margin-top: 10px;
+}
+
+.language i {
+    color: white;
+    padding: 1px;
+}
+
+.language a {
+    padding: 0px;
+    margin: 0px;
+}
+
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    height: 50px;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+
+}
+#nav-top {
+    background-color: #121212;
+}
+
+#user-icon {
+    opacity: .7;
+}
+
+#user-icon:hover {
+    opacity: 1;
+}
+
+
+#icon {
+    color: white;
+    opacity: .6;
+}
+
+#icon:hover{
+    opacity: 1;
+}
+.fa-circle-down {
+    font-size: 1.15rem;
+}
+
+#sign_up {
+    height: 40px;
+    width: 80px;
+    border: 1px solid #121212;
+    border-radius: 30px;
+    background-color: #121212;
+    color: white;
+    font-size: 1rem;
+    opacity: .5;
+
+}
+
+#sign_up:hover{
+    opacity: 1;
+    font-size: 1.03rem;
+    transition: .2s
+}
+
+#log_in {
+    transition: all 0.2s ease-in-out;
+    opacity: .7;
+}
+
+#log_in:hover{
+    opacity: 1;
+    background-color: white;
+}
+
+#log_in:not(:hover) {
+  opacity: 0.7;
+}
+
+.user {
+    position: relative;
+}
+
+@media (max-width:1024px) {
+    .hide { display: none;}
+}
+#songs {
+    background-color: #181818;
+}
+
+.heading h2 {
+    padding-left: 20px;
+    position: relative;
+    top: 10px;
+    display: inline;
+}
+
+.heading a {
+    font-size: small;
+    position: absolute;
+    right: 3rem;
+}
+.cards {
+  height: 300px;
+  width: 200px;
+  background-color: #212121;
+  border-radius: 8px;
+  padding: 10 10 10 10;
+  margin-left: 22px;
+  position: relative;
+  top: 20px;
+  margin-top:1.5rem;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.cards:hover {
+  background-color:rgb(180 180 180 / 20%); /* Subtle highlight on hover */
+  cursor: pointer; /* Indicate interactivity */
+}
+
+.card_body {
+  margin-top: 12px;
+}
+
+
+.cards img {
+  position: relative;
+  top: 8px;
+  border-radius: 8px;
+}
+
+.cards p {
+  font-size: 14px;
+  margin: 0px;
+  opacity: 0.65;
+}
+
+.download-complete-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+  
+.download-complete-button::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.download-button {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+  opacity: 0;
+}
+
+.download-button::before {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: black;
+    filter: blur(4px);
+    z-index: -1;
+}
+
+.download-button:hover svg {
+  transform: scale(1.1); /* Scale the logo on hover */
+}
+
+.download-button:hover::before {
+    transform: scale(1.1); /* Scale the logo on hover */
+}
+
+.cards:hover .download-button {
+    /* Optional hover styles for the download button */
+    top: 55%;
+    opacity: 1; /* Full opacity on hover */
+}
+
+.loading-spinner {
+    position: absolute;
+    top: 55%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent;
+    border-top-color: #1ED760;
+    border-radius: 50%;
+    animation: spin 1s linear infinite; /* Apply rotation animation */
+    opacity: 0; /* Initially hide the spinner */
+}
+
+/* Keyframes for spinner animation */
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* CSS to show the spinner when the download button is clicked */
+.button-area.loading .loading-spinner {
+    opacity: 1;
+    left: 80%;
+}
+
+.button-area.loading .download-button {
+    opacity: 0; /* Hide the SVG icon when spinner is visible */
+}
+
+.cards.highlight-card {
+  background-color:rgb(180 180 180 / 20%); 
+}
+
+.button-area.download-complete .download-button {
+    opacity: 0;
+}
+
+.button-area.download-complete .download-complete-button {
+    opacity: 1;
+}
+
+.recent {
+    margin-left: 20px;
+    position: relative;
+    top: 40px;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#container_featured{
+    display: flex;
+    
+}
+
+.featured-charts {
+    padding-left: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    top: 50px; 
+    display: inline;
+}
+
+.main_footer{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line{
+    width: 90%;
+    height: 30%;
+    border-top: 1px solid white;
+    opacity: .2;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+#links{
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-evenly;
+    margin-top: 10rem;
+    margin-left: 20px;
+
+}
+
+.communities{
+    margin-left: 4rem;
+    
+}
+
+.useful-links{
+    margin-left: 4rem;
+}
+
+#icons {
+    width: 45px;
+    height: 45px;
+    font-size: 1.1rem;
+    border: 1px solid #0c0c0c28;
+    border-radius: 30px;
+    margin-top: 11rem;
+    margin-left: 20px;
+    background-color: #80808028;
+    color: rgb(255, 255, 255, 1);
+}
+
+.copyright{
+    position: relative;
+    bottom:7rem;
+    opacity: .7;
+    font-size:.8rem;
+    margin-left: 2rem;
+}
+
+.music-player{
+    display: flex;
+}
+
+.album{
+    width: 25%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.now_playing{
+    line-height: .5rem;
+    margin-top: .75rem;
+    margin-left: -.75rem;
+}
+
+.player{
+    width:50%;
+}
+
+.player-control{
+    margin-top: .25rem;
+    margin-left: 15rem;
+}
+
+.player-control-icons{
+    height: .75rem;
+    margin: 1.25rem;
+    opacity: .7;
+}
+
+.player-control-icons:hover{
+    opacity: 1;
+}
+
+.play-pause{
+    height: 1.30rem;
+    margin-bottom: 1rem;
+}
+
+.play-pause:hover{
+    height: 1.5rem;
+    transition: .2s;
+}
+
+.progress-bar{
+    width: 30rem;
+    height: .2rem;
+}
+
+.progress-bar, .curr-time, .tot-time 
+{
+    position: relative;
+    bottom: 1.20rem;
+}
+
+.playback-bar{
+    margin-left: 5rem;
+}
+
+.controls{
+    width: 25%;
+    margin-left: 30px;
+}
+
+.vol-bar{
+    width: 15rem;
+    height: .2rem;
+    position: relative;
+    bottom: 1.25rem ;
+}
+
+.play-controls1{
+    position: relative;
+    bottom: .3rem;
+    margin-right: .25rem;
+}
+.play-controls3{
+    position: relative;
+    bottom: .75rem;
+    margin-right: .25rem;
+}
+.play-controls4{
+    position: relative;
+    bottom: .8rem;
+    margin-right: .25rem;
+}
+.play-controls5{
+    position: relative;
+    top: .78rem;
+    margin-right: .25rem;
+}   

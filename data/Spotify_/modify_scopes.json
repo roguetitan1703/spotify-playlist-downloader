@@ -1,0 +1,24 @@
+{
+    "MODIFY_LIBRARY_PLAYLIST_PLUS": [
+        "playlist-read-private",
+        "playlist-read-collaborative",
+        "playlist-modify-private",
+        "playlist-modify-public"
+    ],
+    "MODIFY_PLAYBACK_LISTENING_PLUS": [
+        "user-read-playback-state",
+        "user-modify-playback-state",
+        "user-read-currently-playing",
+        "user-read-playback-position",
+        "user-top-read",
+        "user-read-recently-played"
+    ],
+    "MODIFY_FOLLOW_PLUS": [
+        "user-follow-modify",
+        "user-follow-read"
+    ],
+    "READ_PLAYLIST" :[
+        "playlist-read-private",
+        "playlist-read-collaborative"
+    ]
+}
